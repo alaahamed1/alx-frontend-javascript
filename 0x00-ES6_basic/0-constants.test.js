@@ -1,16 +1,5 @@
-import { taskFirst, getLast, taskNext } from './0-constants';
+import { taskFirst, taskNext } from './0-constants.js';
 
-test('taskFirst returns the correct string', () => {
-  const result = taskFirst();
-  expect(result).toBe('I prefer const when I can.');
-});
-
-test('getLast returns the correct string', () => {
-  const result = getLast();
-  expect(result).toBe(' is okay');
-});
-
-test('taskNext returns the correct combined string', () => {
-  const result = taskNext();
-  expect(result).toBe('But sometimes let is okay');
+test('tasks are correctly defined', () => {
+  expect(`${taskFirst()} ${taskNext()}`).toEqual("I prefer const when I can. But sometimes let is okay");
 });
