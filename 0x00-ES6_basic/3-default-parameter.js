@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
 export default function getSumOfHoods(initialNumber = 43, expansion1989 = 89, expansion2019 = 19) {
-    return initialNumber + expansion1989 + expansion2019;
-  }
+  return initialNumber + expansion1989 + expansion2019;
+}
