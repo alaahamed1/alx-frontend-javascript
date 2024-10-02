@@ -6,6 +6,6 @@ export default function createIteratorObject(report) {
     if (Object.prototype.hasOwnProperty.call(allEmployees, department)) {
     employees.push(...allEmployees[department]);
     }
-}
+  }
   return employees[Symbol.iterator]();
 }
